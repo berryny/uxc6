@@ -44,6 +44,27 @@ A web browser (commonly referred to as a browser) is a software application for 
 Most used web browser by country, as of June 2015. Google
 Chrome, Firefox, Safari, UC. Iron, Microsoft Edge, Opera and Android.
 
+### Browsers to Install
+
+Google Chrome
+[Download](https://www.google.com/chrome/)
+
+Safari - Apple
+[Download](https://support.apple.com/downloads/safari)
+
+Firefox browser
+[Download](https://www.mozilla.org/en-US/firefox/download/thanks/)
+
+Firefox Quantum: Developer Edition
+[Download](https://www.mozilla.org/en-US/firefox/developer/)
+
+Opera browser
+[Download](https://www.opera.com/)
+
+Microsoft Edge
+- [Download](https://www.microsoft.com/en-us/windows/microsoft-edge)
+- [Learn more about Chrome-like Edge browser](https://www.cnet.com/news/microsoft-releases-its-google-chrome-like-edge-browser-for-testing/)
+
 ## HTML
 
 HTML stands for HyperText Markup Language. Developed by scientist Tim
@@ -122,3 +143,68 @@ HTML tags​: HTML documents are described by HTML tags. Each HTML tag describes
   </body>
 </html>
 ```
+
+## CSS: Sample Code
+
+*CSS stands for Cascading Style Sheets* and it represents the design conventions that are applied to the display of HTML elements on screen, paper and other media
+
+### Sample Code
+
+```
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: Verdana;
+    font-size: 20px;
+}
+```
+
+## Additional Resources
+
+Test a [website's performance](https://www.webpagetest.org/)
+
+Create [Github](https://github.com/) account and enable [Github Pages](https://pages.github.com/)
+
+### Keyboard shortcuts in Windows
+
+Applies to: [Windows 10 Windows 8.1 Windows 7](
+https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts)
+
+### Mac keyboard shortcuts
+
+By pressing certain key combinations, you can do things that normally need a mouse, trackpad, or other input device. [Learn more](https://support.apple.com/en-us/HT201236)
+
+What is the revenue generation model for [DuckDuckGo](https://www.quora.com/What-is-the-revenue-generation-model-for-DuckDuckGo)?
+
+### Alternatives
+
+- *Stock Images:*
+https://www.pexels.com/search/google/
+https://www.canva.com/photos/
+- *Text/Content:*
+https://www.lipsum.com/
+- *Lorem Ipsum for photos:*
+https://picsum.photos/
+- *Font:*
+https://fonts.adobe.com/
+https://fonts.google.com/
+https://www.fontsquirrel.com/
+https://fontawesome.com/start
+
+### Create README.md: Basic writing and formatting syntax
+Create sophisticated formatting for your prose and code on GitHub with simple syntax.
+[Learn more](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
+
+### README: Git
+
+[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+
+### README: GitHub package
+The github package brings Git and GitHub integration right inside Atom.
+[Learn more](https://flight-manual.atom.io/using-atom/sections/github-package/#initialize-repositories)
