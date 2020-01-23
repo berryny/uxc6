@@ -15,7 +15,7 @@ The basic web development course is an introduction to front end web site develo
 
 The Internet is a network, or system, that connects millions of computers worldwide.
 
-- [The Internet: HTTP & HTML] (https://www.youtube.com/watch?v=kBXQZMmiA4s)
+- (The Internet: HTTP & HTML) [https://www.youtube.com/watch?v=kBXQZMmiA4s]
 - [What is the world wide web? - Twila Camp] (https://www.youtube.com/watch?v=J8hzJxb0rpc)
 
 ## What is a web___?
