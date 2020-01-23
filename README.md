@@ -14,8 +14,10 @@ The basic web development course is an introduction to front end web site develo
 - Presentation: Monday, February 24th
 
 ## GitHub
+
 - [Repository](https://github.com/berryny/uxc6)
 - [Site](https://berryny.github.io/uxc6/)
+
 ## What is the Internet?
 
 The Internet is a network, or system, that connects millions of computers worldwide.
