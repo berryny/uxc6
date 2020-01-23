@@ -1,16 +1,21 @@
 # City Tech UXC6
 
-## Course Introduction
+## Course
+
+### Introduction
 
 The basic web development course is an introduction to front end web site development. In this 6-week course, the students will be exposed to HTML5 and CSS3. By the end of this course, the student will have developed a working set of web pages with various forms of functionality based upon CSS design standards and a working understanding of JavaScript programming.
 
-## Course Dates
+### Dates
 
 - Days: Monday and Wednesday
 - Time: 2PM - 5PM
 - Class: Jan 22nd, 27th, 29th, Feb 3rd, 5th, 10th, 19th and 24th
 - Presentation: Monday, February 24th
 
+## GitHub
+- [Repository](https://github.com/berryny/uxc6)
+- [Site](https://berryny.github.io/uxc6/)
 ## What is the Internet?
 
 The Internet is a network, or system, that connects millions of computers worldwide.
