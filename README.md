@@ -16,7 +16,7 @@ The basic web development course is an introduction to front end web site develo
 The Internet is a network, or system, that connects millions of computers worldwide.
 
 - [The Internet: HTTP & HTML](https://www.youtube.com/watch?v=kBXQZMmiA4s)
-- [What is the world wide web? - Twila Camp] (https://www.youtube.com/watch?v=J8hzJxb0rpc)
+- [What is the world wide web? - Twila Camp](https://www.youtube.com/watch?v=J8hzJxb0rpc)
 
 ## What is a web___?
 
@@ -33,7 +33,7 @@ address) to a resource on the Internet.
 
 - For the URL http://example.com , the protocol identifier is http or https.
 - For the URL http://example.com , the resource name is example.com
-- [Real Talk about HTTPS] (https://www.youtube.com/watch?v=iP75a1Y9saY)
+- [Real Talk about HTTPS](https://www.youtube.com/watch?v=iP75a1Y9saY)
 
 ### What tool is used to access a website?
 
@@ -50,11 +50,11 @@ HTML stands for HyperText Markup Language. Developed by scientist Tim
 Berners-Lee in 1990, HTML is the "hidden" code that helps us communicate with others on the World Wide Web (WWW).
 
 HTML tags​: HTML documents are described by HTML tags. Each HTML tag describes different content element in a document. Here are some examples:
-- The text between <html> and </html> describes an HTML document
-- The text between <head> and </head> provides information about the document The text between <title> and </title> provides a title for the document
+- The text between `<html> and </html>` describes an HTML document
+- The text between `<head> and </head>` provides information about the document The text between `<title> and </title>` provides a title for the document
 - The text between <body> and </body> describes the visible page content
-- The text between <h1> and </h1> describes a heading
-- The text between <p> and </p> describes a paragraph
+- The text between `<h1> and </h1>` describes a heading
+- The text between `<p> and </p>` describes a paragraph
 
 ### Resources
 - [html cheat sheet](https://lifeyourway.net/printables/blogging-html-cheat-sheet.pdf)
