@@ -20,13 +20,13 @@ The Internet is a network, or system, that connects millions of computers worldw
 
 ## What is a web___?
 
-- A webpage is a single page shown in a web browser. A single video page on YouTube.com is a webpage.
-- A website is a collection of webpages under a single URL (Uniform Resource Locator). Youtube (youtube.com) is a website.
-- A web application is a website which offers advanced functionality like a computer program would. An example of a web application would be a web based calendar, or web based email. Youtube.com is also a web application
+- A *webpage* is a single page shown in a web browser. A single video page on YouTube.com is a webpage.
+- A *website* is a collection of webpages under a single URL (Uniform Resource Locator). Youtube (youtube.com) is a website.
+- A *web application* is a website which offers advanced functionality like a computer program would. An example of a web application would be a web based calendar, or web based email. Youtube.com is also a web application
 
 ### Website
 
-A website or web site is a page or collection of pages on the World Wide Web that contains specific information which was all provided by one person or entity and traces back to a common Uniform Resource Locator (URL)
+A *website or web site* is a page or collection of pages on the World Wide Web that contains specific information which was all provided by one person or entity and traces back to a common *Uniform Resource Locator (URL)*.
 
 URL is an acronym for Uniform Resource Locator and is a reference (an
 address) to a resource on the Internet.
@@ -35,11 +35,9 @@ address) to a resource on the Internet.
 - For the URL http://example.com , the resource name is example.com
 - [Real Talk about HTTPS](https://www.youtube.com/watch?v=iP75a1Y9saY)
 
-### What tool is used to access a website?
+### What is browser?
 
-#### What is browser?
-
-A web browser (commonly referred to as a browser) is a software application for accessing information on the World Wide Web.
+A *web browser* (commonly referred to as a browser) is a software application for accessing information on the World Wide Web.
 
 Most used web browser by country, as of June 2015. Google
 Chrome, Firefox, Safari, UC. Iron, Microsoft Edge, Opera and Android.
@@ -67,8 +65,7 @@ Microsoft Edge
 
 ## HTML
 
-HTML stands for HyperText Markup Language. Developed by scientist Tim
-Berners-Lee in 1990, HTML is the "hidden" code that helps us communicate with others on the World Wide Web (WWW).
+HTML stands for *HyperText Markup Language*. Developed by scientist Tim Berners-Lee in 1990, HTML is the "hidden" code that helps us communicate with others on the World Wide Web (WWW).
 
 HTML tags​: HTML documents are described by HTML tags. Each HTML tag describes different content element in a document. Here are some examples:
 - The text between `<html> and </html>` describes an HTML document
@@ -190,20 +187,21 @@ https://www.canva.com/photos/
 https://www.lipsum.com/
 - *Lorem Ipsum for photos:*
 https://picsum.photos/
+- *Photo editor (browser):*
+https://www.photopea.com/
 - *Font:*
 https://fonts.adobe.com/
 https://fonts.google.com/
 https://www.fontsquirrel.com/
 https://fontawesome.com/start
 
-### Create README.md: Basic writing and formatting syntax
+### Create a README.md: Basic writing and formatting syntax
 Create sophisticated formatting for your prose and code on GitHub with simple syntax.
 [Learn more](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
 
 ### README: Git
 
 [Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
-
 
 ### README: GitHub package
 The github package brings Git and GitHub integration right inside Atom.
