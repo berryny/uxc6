@@ -71,6 +71,20 @@ Microsoft Edge
 - [Download](https://www.microsoft.com/en-us/windows/microsoft-edge)
 - [Learn more about Chrome-like Edge browser](https://www.cnet.com/news/microsoft-releases-its-google-chrome-like-edge-browser-for-testing/)
 
+## Software Installs
+
+MAMP is a free, local server environment that can be installed under macOS and Windows.
+[Download](https://www.mamp.info/en/)
+
+Atom text editor for PC/Mac
+[Download](https://atom.io/)
+
+### Install Helpful Atom Plugins
+- [Emmet](https://atom.io/packages/emmet)
+- [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
+- [Atom-Beautify](https://atom.io/packages/atom-beautify)
+- [Color Picker](https://atom.io/packages/color-picker)
+
 ## HTML
 
 HTML stands for *HyperText Markup Language*. Developed by scientist Tim Berners-Lee in 1990, HTML is the "hidden" code that helps us communicate with others on the World Wide Web (WWW).
@@ -185,6 +199,10 @@ https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts)
 By pressing certain key combinations, you can do things that normally need a mouse, trackpad, or other input device. [Learn more](https://support.apple.com/en-us/HT201236)
 
 What is the revenue generation model for [DuckDuckGo](https://www.quora.com/What-is-the-revenue-generation-model-for-DuckDuckGo)?
+
+### e-Newsletters
+- https://javascriptweekly.com
+- https://responsivedesign.is
 
 ### Alternatives
 
