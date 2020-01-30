@@ -16,7 +16,7 @@ The basic web development course is an introduction to front end web site develo
 ## GitHub
 
 - [Repository](https://github.com/berryny/uxc6)
-- [Course Code Samples](https://github.com/berryny/uxc6/docs)
+- [Course Code Samples](https://github.com/berryny/uxc6/tree/master/docs)
 - [Course Site Codes using GitHub Pages](https://berryny.github.io/uxc6/)
 
 ## What is the Internet?
