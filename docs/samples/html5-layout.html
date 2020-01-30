@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- browser resources -->
+    <title>HTML Layout</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <style type="text/css">
+      /************** 
+        Internal CSS 
+        # = id
+        . = classname
+      ***************/
+
+      /************** 
+        Global Styles 
+      ***************/
+      body, html {
+        margin: 0;
+        postion: relative;
+      }
+      a, a:link, a:visited, a:focus {
+        text-decoration: none;
+        color: black;
+      }
+      .border {
+        border: 1px solid red !important;
+      }
+      
+      /****************************
+        Header / Navagation Styles 
+      *****************************/
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        /*
+          position: absolute;
+          top: 0;
+          left: 0;
+        */
+
+      }
+      .logo {
+        padding-left: 5%;
+      }
+      
+      nav#nav {
+        margin-right: 5%;
+      }
+      nav#nav ul.menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      nav#nav ul.menu li {
+        display: inline;
+        margin-right: 10px;
+      }
+      nav#nav ul.menu li a {
+        color: white;
+      }
+      nav#nav ul.menu li a:hover {
+        color: black;
+      }
+    
+      nav ul li {
+        display: inline;
+      }
+      
+      /************** 
+        Hero Section 
+      ***************/
+
+      .hero {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        height: 100vh;
+        background-image: url('https://i.picsum.photos/id/118/1500/1000.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: top center;
+      }
+      .hero .hero-content {
+        width: 100%;
+      }
+      .hero .hero-content h1 {
+        color: white; font-size: 5em;
+      }
+      .hero .hero-content h1 small,
+      .hero .hero-content h1 span {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- site code starts here -->
+    <header class="header">
+      <!-- user information -->
+      <div class="logo">
+        <a href="/">
+          <img src="https://picsum.photos/100" alt="Company Logo">
+        </a>
+      </div>
+      
+      <nav id="nav" class="nav-menu">
+        <ul id="ul-menu" class="menu">
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/whattodo/">What to Do</a>
+          </li>
+          <li>
+            <a href="/map/">Map</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main-content">
+      <!-- site content layout -->
+      <div class="hero">
+        <div class="hero-content">
+          <h1>
+            <small>Travel to:</small> Country Name
+          </h1>          
+        </div>
+        
+      </div>
+    </main>
+  
+    <footer>
+      <div class="footer">
+        <p>
+          &copy; 2020 My Name 
+        </p>
+        <address>
+          123 SomeWhere Street <br>
+          2<sup>nd</sup> Floor <br>
+          New York, New York 12345
+        </address>
+        <p>
+          <a href="mailto:someone@domain.com">
+            Email Us
+          </a> <br>
+          <a href="tel:+1-555-555-1234">
+            555-555-1234
+          </a>
+        </p>
+      <nav id="nav-footer" class="nav-menu">
+        <ul id="ul-menu-footer" class="menu border" style="">
+          <li style="">
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li style="">
+            <a href="#">Terms &amp; Conditions</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </footer>
+ 
+ 
+  </body>
+</html>
