@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- NOTE: Internal CSS -->
+  <style media="screen" type="text/css">
+    /* p {
+      border: 1px solid black;
+    } */
+  </style>
+  <!-- NOTE: External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- NOTE: Internal Javascript -->
+  <script type="text/javascript">
+    console.log("Internal Javascript")
+  </script>
+  <!-- NOTE: External Javascript -->
+  <script src="js/scripts.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+  <!-- header.header>nav.nav>ul>li*3>a -->
+  <header class="header">
+    <nav class="nav">
+      <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="socialmedia-icons">
+        <li><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- NOTE:  This is .hero-->
+  <div class="hero">
+    <h1>Header One</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <!-- end of .hero -->
+
+  <div class="svgContainer">
+    <h2>Using SVG</h2>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="100%" height="640">
+      <g id="shapes">
+        <g class="groupingOne">
+          <path d="M66.38 60.86L202.38 60.86L202.38 498.27L66.38 498.27L66.38 60.86Z" id="a5y1jByhW"></path>
+        </g>
+        <g class="groupingTwo">
+          <path d="M272.22 88.43L544.22 88.43L544.22 250.16L272.22 250.16L272.22 88.43Z" id="ejVJv9HKi"></path>
+        </g>
+        <g class="groupingThree">
+          <path d="M525.84 393.51C525.84 451.33 473.96 498.27 410.05 498.27C346.15 498.27 294.27 451.33 294.27 393.51C294.27 335.7 346.15 288.76 410.05 288.76C473.96 288.76 525.84 335.7 525.84 393.51Z" id="ckXzkbUtA"></path>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+<!-- NOTE: introduction banner using flex -->
+  <div id="travel-introduction">
+    <div class="travel-intro">
+      <h2>Where to travel?</h2>
+      <p>Below are a list of cities to travel to.</p>
+    </div>
+  </div>
+
+  <!-- NOTE: create a colums to create travel to cities section -->
+  <div id="travetocities">
+    <h2>Travel to Cities</h2>
+    <div id="cities" class="colCities">
+      <div class="city">
+        <div class="city-details">
+          <img src="img/placeholder.jpg" alt="Internal Image">
+          <h2>City Name One</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="city">
+        <div class="city-details">
+          <img src="img/placeholder.jpg" alt="Internal Image">
+          <h2>City Name Two</h2>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+      <div class="city">
+        <div class="city-details">
+          <img src="img/placeholder.jpg" alt="Internal Image">
+          <h2>City Name Three</h2>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="city">
+        <div class="city-details">
+          <img src="img/placeholder.jpg" alt="Internal Image">
+          <h2>City Name One</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTE: Inline CSS -->
+  <p style="border:1px solid red; font-size: 1em; color: red;">Inline Style</p>
+
+  <!-- NOTE:
+    External Image
+    Using picsum https://picsum.photos/
+ -->
+  <p>
+    External Image <br>
+    <img src="https://picsum.photos/200" alt="picsum">
+  </p>
+
+  <!-- NOTE:
+    Internal Image
+    Add an image file into the /img (folder) /filename.extention (name of image)
+  -->
+  <p>
+    Internal Image <br>
+    <img src="img/placeholder.jpg" alt="Internal Image">
+  </p>
+
+
+</body>
+
+</html>
