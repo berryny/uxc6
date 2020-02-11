@@ -118,3 +118,36 @@ h1 {
   display: block;
   width: 100%;
 }
+
+/* NOTE: Circles Sample Code */
+.wrapper h1 {
+  font-size: 3em;
+  font-family: "Lato";
+  text-align: center;
+  margin-bottom: 1em;
+}
+.circle-container {
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+  flex-flow: row wrap;
+  padding: 0 2%;
+}
+.circle-container .circle {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.circle-container .circle span,
+.circle-container .circle img {
+  display: block;
+  height: 15em;
+  width: 15em;
+  border-radius: 50%;
+}
+.fill-circle {
+  background-color: red;
+}
+.stroke-fill {
+  background-color: yellow;
+  border: 3px solid green;
+}
