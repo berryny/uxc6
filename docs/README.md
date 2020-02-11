@@ -6,3 +6,6 @@
 - [Simple HTML and Inline CSS](samples/index.html)
 - [HTML5 Layout and Internal CSS](samples/html5-layout.html)
 - [Keep Calm Poster](samples/poster.html)
+
+## Text Editor Sample Code
+- [htmlclass](htmlclass/index.html)
