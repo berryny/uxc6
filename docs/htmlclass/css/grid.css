@@ -107,7 +107,7 @@ ul {
 }
 
 /* NOTE: Large Screens */
-@media only screen and (min-width: 758px) {
+@media only screen and (min-width: 758px) and (min-height: 758px) {
   body { overflow: hidden; }
   .wrapper, .site-content {
     height: 100vh;
@@ -135,7 +135,7 @@ ul {
 }
 
 /* NOTE: Portable Devices */
-@media only screen and (max-width: 758px) {
+@media only screen and (max-width: 758px), (max-height: 758px) {
   .wrapper {
     display: grid;
     grid-template-areas:
@@ -146,11 +146,13 @@ ul {
 
   .header {
     display: block;
+    height: 100vh;
+    min-height: 600px;
+    border-bottom: 1px solid #eee;
   }
 
   .aside {
     grid-area: header;
-    border-bottom: 1px solid #eee;
     padding-top: 2%;
   }
   .banner-content {
