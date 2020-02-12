@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/grid.css">
+  <title>Grid Layout</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header"></header>
+    <aside class="aside">
+      <div class="banner-content">
+        <img src="https://picsum.photos/id/1027/700" alt="company logo" class="logo round">
+        <h1>First Last</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button onclick="window.location.href = 'https://github.com';" class="link-btn">Button Link</button>
+        <a href="https://www.github.com" class="link-btn">Anchor Link</a>
+        <nav class="socialmedia-icons">
+          <ul>
+            <li><a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+            <li><a href="https://www.behance.net/" target="_blank"><i class="fab fa-behance"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="site-content">
+
+      <main class="main">
+        <div class="portfolio-container">
+          <h2>Headline One</h2>
+          <h3>Subheadline</h3>
+          <section class="portfolio-projects gridCols">
+            <div class="portfolio-project">
+              <img src="https://picsum.photos/id/0/700" alt="placeholder">
+              <h4>Project Name</h4>
+            </div>
+          </section>
+        </div>
+        <div class="research-container">
+          <h2>Headline Two</h2>
+          <h3>Subheadline</h3>
+          <section class="research-projects gridCols">
+            <div class="research-project">
+              <img src="https://picsum.photos/id/201/700" alt="placeholder">
+              <h4>Research Headline One</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="research-project">
+              <img src="https://picsum.photos/id/180/700" alt="placeholder">
+              <h4>Research Headline Two</h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="research-project">
+              <img src="https://picsum.photos/id/160/700" alt="placeholder">
+              <h4>Research Headline Three</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <h3>Contact</h3>
+        <p>&copy; 2020 by First Last</p>
+      </footer>
+
+    </div> <!-- .site-content -->
+
+  </div> <!-- .wrapper -->
+</body>
+
+</html>

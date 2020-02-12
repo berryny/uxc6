@@ -1,0 +1,212 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+@import "normalize.css";
+
+/* NOTE: Global Styles */
+*, *:before, *:after {
+  box-sizing: inherit;
+
+}
+html {
+  box-sizing: border-box;
+    /* NOTE: Smooth Scrolling */
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.25em;
+  color: #575454;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 3s; /* Firefox < 16 */
+      -ms-animation: fadein 3s; /* Internet Explorer */
+       -o-animation: fadein 3s; /* Opera < 12.1 */
+          animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+a, a:link, a:visited, a:focus {
+  color: #575454;
+}
+a:hover {
+  color: #4176FA;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* NOTE: Custom Styles Area */
+.wrapper {
+  position: relative;
+}
+.header {
+  height: 100vh;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.link-btn, .link-btn:link {
+  display: inline-block;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  text-decoration: none;
+  padding: .5em 1em;
+  border-radius: .45em;
+  cursor: pointer;
+  font-size: 1.15em;
+}
+
+.link-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.socialmedia-icons ul {
+  margin: 2em 0;
+}
+
+.socialmedia-icons ul li {
+  display: inline;
+  font-size: 1.75em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.socialmedia-icons ul li:last-child {
+  margin-right: 0;
+}
+
+.socialmedia-icons .fa-dribbble:hover {
+  color: rgb(250, 94, 151);
+}
+.socialmedia-icons .fa-behance:hover {
+  color: rgb(65, 118, 250);
+}
+.socialmedia-icons .fa-linkedin-in:hover {
+  color: rgb(0, 122, 185);
+}
+
+.flexCols img {
+  display: block;
+  width: 100%;
+}
+
+/* NOTE: Large Screens */
+@media only screen and (min-width: 758px) and (min-height: 414px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32vw;
+  }
+  .logo {
+    display: block;
+    width: 100%;
+  }
+  .round {
+    border-radius: 50%;
+  }
+  .banner-content {
+    padding: 0 20%;
+  }
+  .header .arrow { display: none; }
+
+  .site-content {
+    padding-left: 33%;
+  }
+
+  /* NOTE: Using flex to create columns */
+  .flexCols {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    /* try resizing browser width to see the number of colums change */
+    flex-flow: row wrap;
+  }
+  .flexCols .project {
+    width: 33%;
+    margin: 0;
+  }
+
+  .flexCols .project img {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+/* NOTE: Portable Devices */
+@media only screen and (max-width: 758px), (max-height: 414px) {
+  .header {
+    border-bottom: 1px solid #eee;
+    padding: 1%;
+    position: relative;
+  }
+  .header .arrow {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 3em;
+  }
+
+  .banner-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+  .banner-content img.logo {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .banner-details {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}

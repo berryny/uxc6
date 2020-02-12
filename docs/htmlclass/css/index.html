@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recursion javascript</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var addOneUntilTen = function(num){
+      if (num >= 10){
+        console.log("done!")
+      } else {
+        // back tick [``] is a ES6 method to allows you print out the variable using the ${} as a way to escape
+        console.log(`num 1 is ${num}`)
+        // do not use ++ because causes endless loop where it doens't get a chance to excute the num
+        addOneUntilTen( num + 1 );
+        console.log(`num 2 is ${num}`)
+      }
+/*
+      if (num <= 1){
+        console.log("done!")
+      } else {
+        // back tick [``] is a ES6 method to allows you print out the variable using the ${} as a way to escape
+        console.log(`num 1 is ${num}`)
+        // do not use ++ because causes endless loop where it doens't get a chance to excute the num
+        addOneUntilTen( num - 1 );
+        console.log(`num 2 is ${num}`)
+      }
+*/
+    }
+
+//    addOneUntilTen(4);
+
+
+    /*
+      recursion vs iteration
+      https://medium.com/backticks-tildes/iteration-vs-recursion-c2017a483890
+      recursion vs iteration are eqally expressive
+      - resustion can be replaced with iteration
+      - iteration can be replaces with Recursion
+      - pick the best tool for the job
+      - there are often very clear
+    */
+
+    const myArray = [1, [2,[3]],[4]]
+    const flattenIterative = (arr) => {
+      let result = [];
+      while (arr.length){
+        let current = arr.shift();
+        if(!Array.isArray(current)){
+          result.push(current)
+        } else {
+          arr = current.concat(arr)
+        }
+      }
+      console.log(`flattenIterative result: ${result}` )
+    }
+    //flattenIterative(myArray)
+
+    const flattenRecursion = (arr) => {
+      if(!Array.isArray(arr)){
+        return arr;
+      }
+      let results = []
+      for(let i = 0; i < arr.length; i++){
+        results = results.concat(flattenIterative2(arr[i]))
+      }
+      console.log(`flattenRecursion results: ${results}` )
+      return results
+    }
+    //flattenRecursion(myArray)
+
+
+    const flattenRecursion2 = (arr) => {
+      let results2 = []
+
+      const innerRecursive = (val) => {
+        if(!Array.isArray(val)) {
+          results2.push(val)
+        } else {
+          for(let i = 0; i < val.length; i++) {
+            innerRecursive(val[i])
+          }
+        }
+      }
+
+      innerRecursive(arr)
+      console.log(`flattenRecursion2 results2: ${results2}` )
+      return results2
+    }
+    // flattenRecursion2(myArray)
+
+    /*
+      Understand Call Stack
+        A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function, etc.
+        https://developer.mozilla.org/en-US/docs/Glossary/Call_stack
+    */
+
+    /*
+      Our goal is to create a funtion that parses one node at a time.
+      mks.io/js-r
+      https://github.com/hackreactor/recursion_in_javascript
+    */
+    const checkNode = () => {
+
+    }
+
+    /*
+      Write a program that prints out the numbers 1 to 100 (inclusive).
+      If the number is divisible by 3, print Crackle instead of the number.
+      If it's divisible by 5, print Pop.
+      If it's divisible by both 3 and 5, print CracklePop.
+      You can use any language.
+    */
+
+    const cracklePopArr = (begin, end) => {
+      let makeArr = [];
+      for (var i = begin; i < (end + 1); i++) {
+        makeArr.push(i)
+      }
+      const makecracklePop = makeArr.map( (x,i) => {
+        let byThree = (x%3),
+        byFive = (x%5);
+        if ( (byThree === 0) && byFive === 0 ) {
+          makeArr[i] = 'CracklePop';
+        }else if ( byThree === 0 ) {
+          makeArr[i] = 'Crackle';
+        }else if ( byFive === 0 ) {
+          makeArr[i] = 'Pop';
+        }
+      })
+      return makeArr;
+    }
+    // console.log('cracklePopArr', cracklePopArr(1,100));
+    cracklePopArr(1,100)
+
+    /*
+    // First attempt
+    const cracklePopArr = (begin, end) => {
+      let makeArr = [];
+      for (var i = begin; i < (end + 1); i++) {
+        makeArr.push(i)
+      }
+      const makecracklePop = makeArr.map( (x,i) => {
+        if ( (x/3 % 1) === 0 ) {
+          makeArr[i] = 'Crackle';
+        } if ( (x/5 % 1) === 0 ) {
+          makeArr[i] = 'Pop';
+        } if ( ((x/3 % 1) === 0) && (x/5 % 1) === 0 ) {
+          makeArr[i] = 'CracklePop';
+        }
+      })
+      return makeArr;
+    }
+    // console.log('cracklePopArr', cracklePopArr(1,100));
+    cracklePopArr(1,100)
+    */
+  </script>
+</body>
+</html>

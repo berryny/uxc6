@@ -1,0 +1,165 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+@import "normalize.css";
+
+/* NOTE: Global Styles */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.25em;
+  color: #575454;
+}
+
+a, a:link, a:visited, a:focus {
+  color: #575454;
+}
+a:hover {
+  color: #4176FA;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* NOTE: Custom Styles Area */
+
+/*
+  NOTE: Using display grid and template areas
+  Learn more: https://gridbyexample.com/examples/
+*/
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+  grid-template-columns: 1.5fr 3fr;
+}
+.header {
+  grid-area: header;
+}
+
+.aside {
+  grid-area: sidebar;
+  align-self: center;
+}
+
+.link-btn, .link-btn:link {
+  display: inline-block;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  text-decoration: none;
+  padding: .5em 1em;
+  border-radius: .45em;
+  cursor: pointer;
+  font-size: 1.15em;
+}
+
+.link-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.socialmedia-icons ul {
+  margin: 2em 0;
+}
+
+.socialmedia-icons ul li {
+  display: inline;
+  font-size: 1.75em;
+}
+
+.socialmedia-icons .fa-dribbble:hover {
+  color: rgb(250, 94, 151);
+}
+.socialmedia-icons .fa-behance:hover {
+  color: rgb(65, 118, 250);
+}
+.socialmedia-icons .fa-linkedin-in:hover {
+  color: rgb(0, 122, 185);
+}
+
+.site-content {
+  grid-area: main;
+  position: relative;
+}
+.main h2, .main h3 {
+  text-align: center;
+}
+
+.gridCols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr) );
+  grid-gap: 1em;
+}
+.gridCols img {
+  display: block;
+  width: 100%;
+}
+
+/* NOTE: Large Screens */
+@media only screen and (min-width: 758px) {
+  body { overflow: hidden; }
+  .wrapper, .site-content {
+    height: 100vh;
+    min-height: 758px;
+  }
+  .wrapper {
+    overflow: hidden;
+  }
+  .header {
+    display: none;
+  }
+  .logo {
+    display: block;
+    width: 100%;
+  }
+  .round {
+    border-radius: 50%;
+  }
+  .banner-content {
+    padding: 0 20%;
+  }
+  .site-content {
+    overflow: auto;
+  }
+}
+
+/* NOTE: Portable Devices */
+@media only screen and (max-width: 758px) {
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main";
+    grid-template-columns: auto;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .aside {
+    grid-area: header;
+    border-bottom: 1px solid #eee;
+    padding-top: 2%;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .banner-content img.logo {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
