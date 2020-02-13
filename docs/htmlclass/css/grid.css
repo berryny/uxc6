@@ -201,10 +201,13 @@ ul {
   }
 }
 @media only screen and (max-height: 758px) {
+  .aside {
+    padding: 2%;
+  }
 
   .banner-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto) );
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto) );
     grid-gap: .5em;
     align-items: center;
     text-align: center;
