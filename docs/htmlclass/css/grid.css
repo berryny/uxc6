@@ -111,6 +111,11 @@ ul {
 .socialmedia-icons ul li {
   display: inline;
   font-size: 1.75em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.socialmedia-icons ul li:last-child {
+  margin-right: 0;
 }
 
 .socialmedia-icons .fa-dribbble:hover {
@@ -203,6 +208,15 @@ ul {
     max-width: 320px;
     margin: 0 auto;
   }
+
+  .gridCols > div h4,
+  .gridCols > div p {
+    padding: 0 2%;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
 @media only screen and (max-height: 758px) {
   .aside {
@@ -211,7 +225,7 @@ ul {
 
   .banner-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto) );
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto) );
     grid-gap: .5em;
     align-items: center;
     text-align: center;
