@@ -143,7 +143,11 @@ ul {
 
 /* NOTE: Large Screens */
 @media only screen and (min-width: 758px) and (min-height: 758px) {
-  body { overflow: hidden; }
+  body {
+    overflow: hidden;
+    -ms-scroll-limit: 0 0 0 0;
+    -ms-overflow-style: none;
+  }
   .wrapper, .site-content {
     height: 100vh;
     min-height: 758px;
@@ -202,7 +206,7 @@ ul {
 }
 @media only screen and (max-height: 758px) {
   .aside {
-    padding: 2%;
+    padding: 0 2%;
   }
 
   .banner-content {
@@ -215,7 +219,7 @@ ul {
   .banner-content img.logo {
     display: block;
     width: 100%;
-    max-width: 320px;
+    max-width: 150px;
     margin: 0 auto;
   }
 
