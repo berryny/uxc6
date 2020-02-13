@@ -147,7 +147,7 @@ ul {
 }
 
 /* NOTE: Large Screens */
-@media only screen and (min-width: 758px) and (min-height: 758px) {
+@media only screen and (min-width: 758px) and (min-height: 600px) {
   body {
     overflow: hidden;
     -ms-scroll-limit: 0 0 0 0;
@@ -155,7 +155,7 @@ ul {
   }
   .wrapper, .site-content {
     height: 100vh;
-    min-height: 758px;
+    min-height: 600px;
   }
   .wrapper {
     overflow: hidden;
@@ -179,7 +179,7 @@ ul {
 }
 
 /* NOTE: Portable Devices */
-@media only screen and (max-width: 758px), (max-height: 758px) {
+@media only screen and (max-width: 758px), (max-height: 600px) {
   .wrapper {
     display: grid;
     grid-template-areas:
@@ -218,7 +218,7 @@ ul {
     text-align: center;
   }
 }
-@media only screen and (max-height: 758px) {
+@media only screen and (max-height: 600px) {
   .aside {
     padding: 0 2%;
   }
