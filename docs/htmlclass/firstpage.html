@@ -1,0 +1,119 @@
+<!-- NOTE:
+  The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
+  The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
+ -->
+<!DOCTYPE html>
+<!-- NOTE:
+  The <html> tag tells the browser that this is an HTML document.
+ -->
+<html lang="en">
+
+<!-- NOTE:
+  The <head> element can include a title for the document, scripts, styles, meta information, and more.
+ -->
+ <head>
+ <!-- NOTE:
+   The Unicode Consortium develops the Unicode Standard. Their goal is to replace the existing character sets with its standard Unicode Transformation Format (UTF).
+  https://www.w3schools.com/charsets/ref_html_utf8.asp
+-->
+  <meta charset="UTF-8">
+
+  <!-- NOTE:
+    The <meta> tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.
+    https://www.w3schools.com/tags/tag_meta.asp
+ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="My First HTML Code">
+  <meta name="keywords" content="HTML and CSS">
+  <meta name="author" content="First and Last Name">
+
+  <!-- NOTE:
+    The <title> tag is required in all HTML documents and it defines the title of the document.
+ -->
+  <title>My First HTML</title>
+</head>
+
+<!-- NOTE: HTML Element Reference
+https://www.w3schools.com/tags/
+-->
+<body>
+ <!-- NOTE: The <div> tag defines a division or a section in an HTML document. -->
+ <div>
+   <p>An HTML element usually consists of a start tag and an end tag, with the content inserted in between:</p>
+   <p>
+     &lt;tagname&gt;Content goes here...&lt;/tagname&gt;
+   </p>
+ </div>
+
+<!-- NOTE: The <hr> element is used to separate content -->
+  <hr>
+
+  <!-- NOTE:
+  HTML headings are defined with the <h1> to <h6> tags.
+  -->
+  <h1>Heading 1</h1>
+  <h2>Heading 1</h2>
+  <h3>Heading 1</h3>
+  <h4>Heading 1</h4>
+  <h5>Heading 1</h5>
+  <h6>Heading 1</h6>
+
+<!-- NOTE: HTML paragraphs are defined with the <p> tag -->
+  <p>My first paragraph.</p>
+
+  <p>This is <b>bold</b> text.</p>
+  <p>This is another <strong>bold</strong> using <br>&lt;strong&gt;&lt;/strong&gt; tag.</p>
+
+  <p>This is <i>italic</i> text.</p>
+  <p>This is another <em>italic</em> using <br>&lt;em&gt;&lt;/em&gt; tag.</p>
+
+  <p><a href="https://www.w3schools.com/tags/">This is a link</a></p>
+  <p>
+    <!-- NOTE: https://picsum.photos/ -->
+    <img src="https://picsum.photos/200" alt="The Lorem Ipsum for photos." width="200" height="200">
+  </p>
+
+  <!-- NOTE: The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. -->
+  <figure>
+    <img src="https://picsum.photos/200" alt="The Lorem Ipsum for photos." width="200" height="200">
+    <!-- NOTE: The <figcaption> tag defines a caption for a <figure> element. -->
+    <figcaption>Fig.1 - Random images from picsum</figcaption>
+  </figure>
+  <p>
+    <!-- NOTE: HTML buttons are defined with the <button> tag -->
+    <button type="button" name="button">Submit / Send Button</button>
+  </p>
+
+<!-- NOTE:
+  HTML lists are defined with the <ul> (unordered/bullet list) or the <ol> (ordered/numbered list) tag, followed by <li> tags (list items)
+ -->
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <ol>
+    <li>Wake up</li>
+    <li>Take a shower</li>
+    <li>Eat breakfast</li>
+    <li>Pratice HTML</li>
+  </ol>
+
+  <blockquote cite="https://en.wikipedia.org/wiki/Arturo_Alfonso_Schomburg">
+    <p>The modern school without systematic lectures turns out many graduates who lack retention. No sooner had the sound of the word left thier teacher's lips, the subject has been forgotten.</p>
+    <footer>—Arturo Alfonso Schomburg</footer>
+  </blockquote>
+
+  <!-- NOTE: If the <address> element is inside the <body> element, it represents contact information for the document. -->
+  <address>
+    <!-- NOTE: Use the <sub> tag to define subscript text. -->
+    215 W 127<sup>th</sup> St, New York, NY 10027 <br>
+    <!-- NOTE: Mailto link is a type of HTML link that activates the default mail client on the computer for sending an e-mail. -->
+    Email <a href="mailto:nstat@stnicholashouses.org">Jon Doe</a> for more information.<br>
+    <!-- NOTE: Link telephone numbers for click to call -->
+    Phone <a href="tel:+1-646-597-0127">646-597-0127</a> for more information.<br>
+  </address>
+</body>
+</html>
