@@ -78,7 +78,14 @@
       letter-spacing: 3px;
       transform: rotate(-20deg);
     }
-
+    /* NOTE: jumbotron */
+    .hero {
+      background-color: transparent;
+      background-image: url(https://sewing-machine-reviews.net/contentimg/all-the-birds-in-the-sky-epub-vk.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+    }
     /* NOTE: Styles for #travels */
 
     #travels .card {
@@ -141,9 +148,12 @@
   </header>
 
   <main class="main container-fluid">
-    <div class="hero">
-      <h1>Stories of my trav<span class="letter-e">e</span>ls</h1>
-      <p>It was a cold month in 2017 and I was visiting family in New York. I was tired after traveling for almost a year and a half. Although I had bought tickets and got a visa to go to Turkey, I decided to stay and rest here. I have regretted that
+    <!-- NOTE: Using jumbotron
+    https://getbootstrap.com/docs/4.4/components/jumbotron/
+  -->
+    <div class="hero jumbotron">
+      <h1 class="display-4">Stories of my trav<span class="letter-e">e</span>ls</h1>
+      <p class="lead">It was a cold month in 2017 and I was visiting family in New York. I was tired after traveling for almost a year and a half. Although I had bought tickets and got a visa to go to Turkey, I decided to stay and rest here. I have regretted that
         decision ever since I left Europe, and so it's at the top of my list.</p>
     </div>
     <!-- NOTE:
