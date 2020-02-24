@@ -70,23 +70,28 @@
       margin-right: 3em;
     }
 
-
-    /* DEBUG: Header Heading 1 effect */
-    h1 .letter-e {
-      display: inline-block;
-      font-family: 'Roboto Mono';
-      font-size: 1em;
-      letter-spacing: 3px;
-      transform: rotate(-20deg);
-    }
     /* NOTE: jumbotron */
     .hero {
       background-color: transparent;
       background-image: url(https://sewing-machine-reviews.net/contentimg/all-the-birds-in-the-sky-epub-vk.jpg);
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
       text-align: center;
+
+      margin: 0 -15px 1em -15px;
+      border-radius: 0;
     }
+
+    /* DEBUG: Header Heading 1 effect */
+    .hero h1 .letter-e {
+      display: inline-block;
+      font-family: 'Roboto Mono';
+      font-size: 3.5rem;
+      letter-spacing: 3px;
+      transform: rotate(-20deg);
+    }
+
     /* NOTE: Styles for #travels */
 
     #travels .card {
@@ -153,8 +158,9 @@
     https://getbootstrap.com/docs/4.4/components/jumbotron/
   -->
     <div class="hero jumbotron">
-      <h1 class="display-4">Stories of my trav<span class="letter-e">e</span>ls</h1>
-      <p class="lead">It was a cold month in 2017 and I was visiting family in New York. I was tired after traveling for almost a year and a half. Although I had bought tickets and got a visa to go to Turkey, I decided to stay and rest here. I have regretted that
+      <h1 class="display-4">Stories of my <br>trav<span class="letter-e">e</span>ls</h1>
+      <p class="lead">It was a cold month in 2017 and I was visiting family in New York. I was tired after traveling for almost a year and a half. Although I had bought tickets and got a visa to go to Turkey, I decided to stay and rest here. I have
+        regretted that
         decision ever since I left Europe, and so it's at the top of my list.</p>
     </div>
     <!-- NOTE:
