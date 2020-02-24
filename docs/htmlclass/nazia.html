@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- DEBUG:
+    Used the base tag to set a default URL with is your github pages
+    You don't have to add element tag to your HTML
+   -->
+  <base href="https://naziaroushan.github.io/travelbag/" target="_blank">
+
+  <!-- NOTE: Add favicon
+    This attribute is only used if rel="icon".
+    https://www.w3schools.com/tags/att_link_sizes.asp
+   -->
+  <link rel="shortcut icon" href="img/logo1.png">
+
+  <title>Nazia Travel Bag</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style media="screen" type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+
+    .header .navbar {
+      background-color: black;
+    }
+
+    .navbar-light .navbar-brand {
+      color: #d39e00;
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .show>.nav-link {
+      color: #d39e00;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+      color: #d39e00;
+    }
+
+    /* NOTE: CSS Filters
+      https://css-tricks.com/almanac/properties/f/filter/
+     */
+    .navbar-light .navbar-toggler-icon {
+      filter: invert(100%);
+    }
+
+    /* NOTE: img {
+    width:inherit;
+    } */
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+    }
+
+    .btn-primary {
+      color: #1d2124;
+      background-color: #ffc107;
+      border-color: #ffc107;
+    }
+
+    .header .nav ul li {
+      /* margin: 0 3em; */
+      margin-right: 3em;
+    }
+
+    /* NOTE: Styles for #travels */
+    #travel h1 .letter-e {
+      display: inline-block;
+      font-size: 1em;
+      letter-spacing: 3px;
+      transform: rotate(-20deg);
+    }
+
+    #travels .card {
+      border: 0;
+      margin-bottom: 1em;
+    }
+
+    /* NOTE:
+      Method 1: Place a div around the card image with a fixed height and use overflow to mask the image height over 150px
+      Method 2: Edit the images to have the same height and width. Use https://www.photopea.com/ or photo editor software to edit the image's dimensions
+    */
+    #travels .image-overflow {
+      height: 150px;
+      overflow: hidden;
+    }
+
+    #travels .card-body {
+      padding-left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="logo">
+        <a href="/">
+          <!-- Takes you to home page -->
+          <img src="img/logo1.png" width="50" height="50" alt="Travelbag Logo">
+        </a>
+      </div>
+      <a class="navbar-brand" href="#"></a> <!-- NOTE: Replaced text with logo -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Travelbag <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              What's in my bag?
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Day trip</a>
+              <a class="dropdown-item" href="#">Two weeks</a>
+              <a class="dropdown-item" href="#">Four months or more</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero container-fluid">
+    <h1>Stories of my trav<span class="letter-e">e</span>ls</h1>
+    <p>It was a cold month in 2017 and I was visiting family in New York. I was tired after traveling for almost a year and a half. Although I had bought tickets and got a visa to go to Turkey, I decided to stay and rest here. I have regretted that
+      decision ever since I left Europe, and so it's at the top of my list.</p>
+
+    <!-- NOTE:
+      - Add id attribute with value equal to travels
+      - Remove inline CSS style="width: 20rem;"
+      - Add responsive columns width divs
+      https://getbootstrap.com/docs/4.4/layout/grid/
+    -->
+    <div id="travels" class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <!-- NOTE: Use a div to mask the image overflow -->
+            <div class="image-overflow">
+              <img src="img/cappadocia.jpg" class="card-img-top" alt="Cappadocia">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Turkey</h5>
+              <p class="card-text">Turkey is a large peninsula that bridges the continents of Europe and Asia. Once the centre of the Ottoman Empire, the modern secular republic was established in the 1920s by nationalist leader Kemal Ataturk.</p>
+              <a href="#" class="btn btn-primary">See my travel plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <!-- NOTE: Or edit each image to have the same height and width -->
+            <img src="img/greece.jpg" class="card-img-top" alt="Greece">
+            <div class="card-body">
+              <h5 class="card-title">Greece</h5>
+              <p class="card-text">Situated in the far south of the Balkan peninsula, Greece combines the towering mountains of the mainland with over 1,400 islands, the largest of which is Crete. Greece has the longest coastline in Europe and is the
+                southernmost country in Europe.</p>
+              <a href="#" class="btn btn-primary">See my travel plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <!-- NOTE: Or edit each image to have the same height and width -->
+            <img src="img/japan.jpg" class="card-img-top" alt="Japan">
+            <div class="card-body">
+              <h5 class="card-title">Japan</h5>
+              <p class="card-text">Japan is an archipelago in East Asia. It is located at the western end of the Pacific Ocean, east of the Sea of Japan, and is adjacent to the People’s Republic of China, Korea and Russia. Because Japan consists of
+                6,852 islands is called an archipelago Island.</p>
+              <a href="#" class="btn btn-primary">See my travel plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="container-fluid">
+    <font size="2em">
+      <div class="footer">
+        <p>
+          &copy; 2020 Nazia Roushan
+        </p>
+        <address>
+          123 Sesame Street <br> <!-- NOTE: <br> Breaks up line -->
+          2<sup>nd</sup> Floor <br> <!-- NOTE: <sup> Superlative -->
+          New York, NY 10023
+        </address>
+        <p>
+          <a href="mailto:emailtogetspammed@gmail.com">
+            Email me
+          </a> <br>
+          <a href="tel:+1-212-595-3456">
+            212-595-3456
+          </a>
+        </p>
+      </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
