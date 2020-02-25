@@ -87,7 +87,6 @@
     .hero h1 .letter-e {
       display: inline-block;
       font-family: 'Roboto Mono';
-      font-size: 3.5rem;
       letter-spacing: 3px;
       transform: rotate(-20deg);
     }
@@ -110,6 +109,11 @@
 
     #travels .card-body {
       padding-left: 0;
+    }
+
+    /* NOTE: Footer - linkedin badge */
+    .LI-badge-container.horizontal.light {
+      width: 100%;
     }
   </style>
 </head>
@@ -214,14 +218,15 @@
   </main>
 
   <footer class="container-fluid">
-    <font size="2em">
-      <div class="footer">
+    <div class="row">
+      <div class="col-sm col-md">
         <p>
           &copy; 2020 Nazia Roushan
         </p>
+      </div>
+      <div class="col-sm col-md">
         <address>
-          123 Sesame Street <br> <!-- NOTE: <br> Breaks up line -->
-          2<sup>nd</sup> Floor <br> <!-- NOTE: <sup> Superlative -->
+          123 Sesame Street, 2<sup>nd</sup> Floor <br> <!-- NOTE: <sup> Superlative -->
           New York, NY 10023
         </address>
         <p>
@@ -233,6 +238,12 @@
           </a>
         </p>
       </div>
+      <div class="col-md">
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async="" defer=""></script>
+        <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="nazia-roushan"><a class="LI-simple-link"
+            href="https://www.linkedin.com/in/nazia-roushan?trk=profile-badge">Nazia Roushan</a></div>
+      </div>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
