@@ -150,6 +150,12 @@ HTML tags​: HTML documents are described by HTML tags. Each HTML tag describes
         </menu>
       </nav>
     </header>
+    <aside>
+      <div class="sidebar">
+        <h2>Sidebar Header</h2>
+        <p>This is the sidebar content.</p>
+      </div>
+    </aside>
     <main>
       <div class="site-content">
         <h1>Week One: HTML Sample Code</h1>
